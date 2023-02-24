@@ -1,0 +1,66 @@
+
+body {
+
+    background-image: url(fondo.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color:rgb(0, 0, 0);
+}
+div {
+    font-family: Helvetica;
+    padding: 7.5px;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    color:rgb(0, 0, 0);
+    background-color: rgb(175, 150, 120);
+
+   
+}
+
+h2 {
+    font-family: Helvetica;
+    padding: 10px;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    outline-offset: -3px;
+    background-color: rgba(36, 168, 230, 0.849);
+    color:rgb(0, 0, 0);
+
+}
+
+h1 {
+    font-family: Helvetica;
+    font-size: 50px;
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px black;
+
+}
+
+.marco2 iframe{
+    border: 5px solid #0d29c9e1;
+}
+
+leftcolumn{
+    font-family: Helvetica;
+    float: left;
+    width: 25%;
+    padding: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline-style: solid;
+    outline-color:rgb(0, 0, 0);
+    outline-offset: -8px;
+}
+
+rightcolumn{
+    float: left;
+    width: 65%;
+    padding: 25px;
+    outline-style: solid;
+    outline-color: rgb(0, 0, 0);
+    outline-offset: -8px;
+}
