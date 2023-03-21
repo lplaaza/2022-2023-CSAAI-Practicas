@@ -1,0 +1,54 @@
+body {
+    background-image: url(bomba.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.tiempo {
+    border-width:thick;
+    border:solid;
+    border-color:greenyellow;
+    width: 500px;
+    padding: 40px;
+    background-color: rgb(199, 95, 219);
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.panel {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    column-gap: 30px;
+}
+
+.codigo {
+    color:green;
+    transform: scale(2);
+    transition: .165s all;
+}
+
+.numero {
+    margin-bottom: 15px;
+    background-color: rgb(230, 206, 206);
+    width: 50px;
+    height: 50px;
+    transition: .165 all;
+    cursor: pointer;
+}
+
+.numero:hover
+.numero:focus {
+    background-color:rgb(202, 74, 192)
+}
+
+.control {
+    cursor: pointer;
+    border:none;
+    box-shadow: 0 5px 15px #cfbdbd;
+    border-radius: 0;
+    padding: 7px 20px;
+}
