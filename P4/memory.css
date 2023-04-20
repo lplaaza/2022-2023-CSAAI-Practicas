@@ -6,15 +6,18 @@
 /* Y así podremos hacer referencia al font-family Montserrat más adelante
 font-family: Montserrat;
 */
+body {
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 html {
     width: 100%;
     height: 100%;
     font-family: Montserrat;
 }
 
-.win {
-
-}
 .game {
     position: absolute;
     top: 50%;
@@ -52,6 +55,13 @@ button {
     position: relative;
 }
 
+.win {
+    border-radius: 10px;
+    backface-visibility: hidden;
+    box-shadow: 0 25px 50px rgb(20, 20, 20/ 15%);
+    backface-visibility: hidden;
+    transition: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
 .tablero {
     padding: 20px;
     display: grid;
@@ -103,16 +113,13 @@ button {
 }
 
 .win {
-    box-shadow: 0 25px 50px rgb(20, 20, 20/ 15%);
-    backface-visibility: hidden;
-    transition: cubic-bezier(0.4, 0.0, 0.2, 1);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     text-align: center;
-    background: #f8f8f8;
+    background: #75cc88;
     transform: rotateY(180deg) rotateZ(50deg)
 }
 
