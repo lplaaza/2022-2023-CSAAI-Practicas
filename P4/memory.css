@@ -12,6 +12,9 @@ html {
     font-family: Montserrat;
 }
 
+.win {
+
+}
 .game {
     position: absolute;
     top: 50%;
@@ -109,7 +112,8 @@ button {
     width: 100%;
     height: 100%;
     text-align: center;
-    background: #a58821;
+    background: #f8f8f8;
+    transform: rotateY(180deg) rotateZ(50deg)
 }
 
 .win-text {
