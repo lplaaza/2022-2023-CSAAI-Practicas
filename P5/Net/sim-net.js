@@ -2,8 +2,10 @@ console.log("Montando la red...")
 
 const gui = {
   bsend : document.getElementById("bsend"),
-  netdelay : document.getElementById("netdelay"),
+  netdelay : document.getElementById("netDelay"),
   netdelayvalue : document.getElementById("netdelay_value"),
+  netNodes : document.getElementById("netNodes"),
+  netnodevalue : document.getElementById("netnode_value"),
 }
 
 //-- Obtener elementos del DOM
@@ -21,12 +23,15 @@ const state = {
   sendingPackage:0,
   netDelay: 1,
   netDelayDefault: 1,
+  netNode: 3,
+  netNodeDefault: 3,
   loop: null
 }
 
 //-- Iniciar el valor del deslizador con el valor de la 
 // variable de estado para el delay
 gui.netdelayvalue.innerHTML = state.netDelay;
+gui.netnodevalue.innerHTML = state.netNode;
 
 //-- Cuando está disponible cargo la imagen con la nube para represntar el destino
 imgCloud.onload = function () {
@@ -54,6 +59,10 @@ gui.netdelay.oninput = () => {
   state.netDelay = gui.netdelay.value;
 }
 
+gui.netNodes.oninput = () => {
+    gui.netnodevalue.innerHTML = gui.netNodes.value;
+    state.netNode = gui.netNodes.value;
+}
 //-- simulación del envío de la imagen
 //-- la he planteado como que cada línea horizontal de la imagen
 //-- es un paquete de datos, que sufrirá el retardo correspondiente.

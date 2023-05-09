@@ -1,6 +1,26 @@
 body {
-    background-color: grey;
+    background-image: url("fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 0%;
+    margin: 50px;
   }
+
+p {
+  font-size: 20pt;
+  color: white;
+
+}
+
+button {
+  background: rgb(0, 255, 234);
+    color: #FFF;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 0;
+    cursor: pointer;
+}
 
 #cloud {
   display: none;
